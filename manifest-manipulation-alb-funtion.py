@@ -9,7 +9,7 @@ import boto3
 def lambda_handler(event, context):
     path = event['path']
 header = event['headers']
-bucket_name = 'ftc-vod-ingest-videos-002826676743-us-east-1' //SOURCE BUCKET
+bucket_name = 'YOUR_BUCKET' //SOURCE BUCKET
 status = event['queryStringParameters'].get('hdnts')
 if status:
     token = event['queryStringParameters']['hdnts']
